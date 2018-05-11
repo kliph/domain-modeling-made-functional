@@ -1,2 +1,9 @@
 * My notes for Domain Modeling Made Functional by Scott Wlaschin
 https://www.goodreads.com/book/show/34921689-domain-modeling-made-functional
+* Preface
+The book recommends using F#, but I'd prefer to use Clojure.  I suspect that I'll need some flavor of typing.  We'll see how far I get with plain old Clojure before introducing [[http://typedclojure.org/][one of the Clojure Type]] ([[https://clojure.org/guides/spec][or type-like]]) systems.
+** Domains emphasizing combining elements together to make other elements
+A so-called "algebraic" approach to functional domain modeling.
+*** Bounded Context
+**** A consistent vocabulary
+**** Set of behaviors
