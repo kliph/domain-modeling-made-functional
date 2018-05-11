@@ -41,3 +41,26 @@ which stack below each primary action
 #+END_QUOTE
 
 ** Event storming
+
+The Event Storming activity facilitates the following.
+
+- A shared model of the business
+- Awareness of aspects of the business outside of any single team's purview
+- Elucidating gaps in requirements
+- Illustrating connections between teams
+  - Important not to get bogged down in technical implementation details at this point
+
+** Glossary
+- Scenario :: a goal that a user wants to achieve, such as placing an order.
+- Use-Case :: the user interactions and other steps that a user needs to take in order to accomplish a goal.
+- Business Process :: a goal that the business wants to achieve
+- Workflow :: a detailed description of part of a business process.  Can be coordinated across multiple teams/strata of the business.
+- Business Event :: events that happen in the business' domain
+- Command :: The imperative form of a business event
+- Domain :: an area of coherent knowledge in the business e.g. billing, order-taking, shipping
+- Bounded Context :: a model proposing a coherent solution for the analyzed domain that is mindful of the Context in which it lives and the Boundaries separating it from other aspects of the business.  Domain is to real world problem space as Bounded Context is to solution space.
+- Context :: Specialized knowledge and terms
+- Boundary :: A loosely coupled API defining a way of communicating between two Bounded Contexts
+
+
+- Scenarios and Use Cases are good approximations to Agile stories
