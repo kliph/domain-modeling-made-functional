@@ -5,5 +5,39 @@ The book recommends using F#, but I'd prefer to use Clojure.  I suspect that I'l
 ** Domains emphasizing combining elements together to make other elements
 A so-called "algebraic" approach to functional domain modeling.
 *** Bounded Context
-**** A consistent vocabulary
-**** Set of behaviors
+- A consistent vocabulary
+- Set of behaviors
+* Chapter 1
+** Garbage in, garbage out
+No amount of good code can create a great deliverable if you have a poor understanding of the requirements.
+** Developer as Translator
+** Creating a shared mental model
+- Focus on business domain and workflows
+- Split problem domain into small bits
+- Model each bit
+- Develop a common glossary that everyone on the project agrees to and uses
+** Structured User Journey
+** Workflow modeling
+- What starts this workflow?
+- Who does this?
+- And then what happens
+
+This process results in a state diagram and flowchart.
+
+Andrew's process:
+
+#+BEGIN_QUOTE
+i typically break up the “types” of nodes to:
+- User action/event
+- User reaction
+- Data
+- Divergence
+
+You start with an initial event/action… “what happens first”
+And identify the end event/action “when is the user done”
+and work to fill in the gaps from left -> right
+at each event/action, you may have corresponding reactions, data, or errors/divergences
+which stack below each primary action
+#+END_QUOTE
+
+** Event storming
